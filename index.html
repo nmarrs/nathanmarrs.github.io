@@ -5,7 +5,7 @@
   <title>Nathan J. Marrs</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="LogoBackground.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/pine_icon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -33,15 +33,23 @@
       background-position: center;
       background-size: cover;
     }
+    .text {
+      text-shadow: 1px 1.5px 1px black;
+    }
+    @media (max-width: 547px) {
+      #content_title {
+        font-size: 3.25em !important;
+      }
+    }
   </style>
 </head>
 
-<body onload="load()">
+<body>
   <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    <div class="w3-display-topleft w3-padding-large w3-xlarge text">
       NJM
     </div>
-    <div class="w3-hide-large w3-hide-medium w3-display-topright w3-padding-large">
+    <div class="w3-hide-large w3-hide-medium w3-display-topright w3-padding-large text">
       <a href="https://www.linkedin.com/in/nmarrs" target="_blank">
         <i class="fa fa-linkedin fa-2x w3-hover-opacity"></i>
       </a>
@@ -56,9 +64,9 @@
       </a>
     </div>
     <div class="w3-display-middle w3-center">
-      <h1 class="w3-jumbo w3-animate-top">Nathan J. Marrs</h1>
-      <hr class="w3-border-grey w3-hide-small" style="margin:auto;width:40%">
-      <p class="w3-hide-small">
+      <h1 id="content_title" class="w3-jumbo w3-animate-top text">Nathan J. Marrs</h1>
+      <hr class="w3-border-white w3-hide-small" style="margin:auto;width:40%">
+      <p class="w3-hide-small text">
         <a href="https://www.linkedin.com/in/nmarrs" target="_blank">
           <i class="fa fa-linkedin fa-2x w3-hover-opacity"></i>
         </a>
